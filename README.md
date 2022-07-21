@@ -1,1 +1,1 @@
-# bases
+# Python для всех
