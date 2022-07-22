@@ -109,3 +109,15 @@
 
 # Функция print. Меняем символ между значениями аргументов
 # print('Сегодня', 'хорошая', 'погода', sep='_')
+
+# Функции
+def name(name):
+	print(f'Ваше имя: {name}')
+name('Александр')
+
+def name_input():
+	name = input('Введите ваше имя: ')
+	print(f'Ваше имя: {name}')
+	return name
+string_name = name_input()
+print(string_name)
