@@ -8,4 +8,8 @@ window.geometry('600x400+700+400') # Размеры и начальное рас
 window.resizable(False, False) # Фиксируем размеры приложения
 window.config(bg='grey') # Меняем цвет фона приложения
 
+button_1 = Button(window, text = 'Кнопка 1')
+
+button_1.pack()
+
 window.mainloop()
