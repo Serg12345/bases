@@ -12,7 +12,7 @@ def hello():
 	print('Привет!')
 
 # button_1 = Button(window, text = 'Кнопка 1', command = hello, width = 10, height = 2, bd = 10, font = 'Arial 10 bold')
-button_1 = Button(window, text = 'Кнопка 1', padx = 5, pady = 5, bd = 10, activebackground = 'yellow', activeforeground = 'orange')
+button_1 = Button(window, text = 'Кнопка 1', padx = 5, pady = 5, bd = 10, activebackground = 'yellow', activeforeground = 'orange', bg = 'green', fg = 'white')
 
 button_1.pack()
 
