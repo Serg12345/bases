@@ -11,7 +11,8 @@ window.config(bg='grey') # Меняем цвет фона приложения
 def hello():
 	print('Привет!')
 
-button_1 = Button(window, text = 'Кнопка 1', command = hello, width = 10, height = 2, bd = 10, font = 'Arial 10 bold')
+# button_1 = Button(window, text = 'Кнопка 1', command = hello, width = 10, height = 2, bd = 10, font = 'Arial 10 bold')
+button_1 = Button(window, text = 'Кнопка 1', bd = 10, padx = 10, pady = 10)
 
 button_1.pack()
 
