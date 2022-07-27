@@ -32,11 +32,14 @@ button_4['padx'] = 5
 button_4['pady'] = 5
 button_4['bd'] = 10
 
+label_1 = Label(window, text = 'Это виджет Label!', bg = 'green', fg ='white')
+
 frame_1.pack()
 frame_2.pack()
 button_1.pack(side = LEFT, padx = 5, pady = 5)
 button_2.pack(side = LEFT, padx = 5, pady = 5)
 button_3.pack(side = LEFT, padx = 5, pady = 5)
 button_4.pack(side = LEFT, padx = 5, pady = 5)
+label_1.pack()
 
 window.mainloop()
