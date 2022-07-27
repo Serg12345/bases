@@ -33,6 +33,8 @@ button_4['pady'] = 5
 button_4['bd'] = 10
 
 label_1 = Label(window, text = 'Это виджет Label!', bg = 'green', fg ='white', font = '"Comic Sans MS" 15 bold')
+label_img = PhotoImage(file = 'img/label-image.png')
+label_2 = Label(window, image = label_img)
 
 frame_1.pack()
 frame_2.pack()
@@ -41,5 +43,6 @@ button_2.pack(side = LEFT, padx = 5, pady = 5)
 button_3.pack(side = LEFT, padx = 5, pady = 5)
 button_4.pack(side = LEFT, padx = 5, pady = 5)
 label_1.pack()
+label_2.pack()
 
 window.mainloop()
