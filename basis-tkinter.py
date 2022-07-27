@@ -32,7 +32,7 @@ button_4['padx'] = 5
 button_4['pady'] = 5
 button_4['bd'] = 10
 
-label_1 = Label(window, text = 'Это виджет Label!', bg = 'green', fg ='white')
+label_1 = Label(window, text = 'Это виджет Label!', bg = 'green', fg ='white', font = '"Comic Sans MS" 15 bold')
 
 frame_1.pack()
 frame_2.pack()
