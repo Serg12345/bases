@@ -23,8 +23,8 @@ button_3['padx'] = 5
 button_3['pady'] = 5
 button_3['bd'] = 10
 
-button_1.pack()
-button_2.pack()
-button_3.pack()
+button_1.pack(padx = 5, pady = 5)
+button_2.pack(padx = 5, pady = 5)
+button_3.pack(padx = 5, pady = 5)
 
 window.mainloop()
