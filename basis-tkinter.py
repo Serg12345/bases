@@ -11,6 +11,9 @@ window.config(bg='grey') # Меняем цвет фона приложения
 def hello():
 	print('Привет!')
 
+def entry_get():
+	label_entry_get['text'] = f'Ваше число: {entry_1.get()}'		
+
 frame_1 = Frame(window)
 frame_2 = Frame(window)
 
@@ -41,11 +44,13 @@ frame_entry = Frame(window)
 label_entry = Label(frame_entry, text = 'Поле ввода:')
 entry_1 = Entry(frame_entry, bd = 5)
 entry_1.insert(0, 'Введите ваше число: ')
-button_entry = Button(frame_entry, text = 'Принять', bd = 5)
+button_entry = Button(frame_entry, text = 'Принять', bd = 5, command = entry_get)
 
 label_entry.pack(side = LEFT)
 entry_1.pack(side = LEFT, padx = 5)
 button_entry.pack(side = LEFT)
+
+label_entry_get = Label(window, text = 'Ваше число: ', bg = 'green', fg = 'white')
 
 frame_1.pack()
 frame_2.pack()
@@ -56,5 +61,6 @@ button_4.pack(side = LEFT, padx = 5, pady = 5)
 label_1.pack()
 label_2.pack()
 frame_entry.pack()
+label_entry_get.pack()
 
 window.mainloop()
