@@ -12,7 +12,10 @@ def hello():
 	print('Привет!')
 
 def entry_get():
-	label_entry_get['text'] = f'Ваше число: {entry_1.get()}'		
+	label_entry_get['text'] = f'Ваше число: {entry_1.get()}'
+
+def clear():
+	entry_1.delete(0, END)		
 
 frame_1 = Frame(window)
 frame_2 = Frame(window)
@@ -45,10 +48,12 @@ label_entry = Label(frame_entry, text = 'Поле ввода:')
 entry_1 = Entry(frame_entry, bd = 5)
 entry_1.insert(0, 'Введите ваше число: ')
 button_entry = Button(frame_entry, text = 'Принять', bd = 5, command = entry_get)
+button_clear = Button(frame_entry, text = 'Очистить', bd = 5, command = clear)
 
 label_entry.pack(side = LEFT)
 entry_1.pack(side = LEFT, padx = 5)
 button_entry.pack(side = LEFT)
+button_clear.pack(side = LEFT)
 
 label_entry_get = Label(window, text = 'Ваше число: ', bg = 'green', fg = 'white')
 
