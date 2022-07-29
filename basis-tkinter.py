@@ -40,6 +40,7 @@ label_2 = Label(window, image = label_img)
 frame_entry = Frame(window)
 label_entry = Label(frame_entry, text = 'Поле ввода:')
 entry_1 = Entry(frame_entry, bd = 5)
+entry_1.insert(0, 'Введите ваше число: ')
 button_entry = Button(frame_entry, text = 'Принять', bd = 5)
 
 label_entry.pack(side = LEFT)
