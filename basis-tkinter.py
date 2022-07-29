@@ -36,6 +36,16 @@ label_1 = Label(window, text = 'Это виджет Label!', bg = 'green', fg ='
 label_img = PhotoImage(file = 'img/label-image.png')
 label_2 = Label(window, image = label_img)
 
+# Виджет Entry
+frame_entry = Frame(window)
+label_entry = Label(frame_entry, text = 'Поле ввода:')
+entry_1 = Entry(frame_entry, bd = 5)
+button_entry = Button(frame_entry, text = 'Принять', bd = 5)
+
+label_entry.pack(side = LEFT)
+entry_1.pack(side = LEFT, padx = 5)
+button_entry.pack(side = LEFT)
+
 frame_1.pack()
 frame_2.pack()
 button_1.pack(side = LEFT, padx = 5, pady = 5)
@@ -44,5 +54,6 @@ button_3.pack(side = LEFT, padx = 5, pady = 5)
 button_4.pack(side = LEFT, padx = 5, pady = 5)
 label_1.pack()
 label_2.pack()
+frame_entry.pack()
 
 window.mainloop()
